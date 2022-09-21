@@ -16,8 +16,11 @@ export const Rectangulo = styled.div`
 export const Frame = styled.p`
     font-size: 1rem;
     text-align: center;
-    //padding: 4rem;
+    padding: 2rem;
     font-family:sans-serif;
     font-weight: 400;
     line-height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
