@@ -4,6 +4,8 @@ Un/a client/a que té com a producte principal una web de gestió empresarial de
 
 Com de moment no tenim el material necessari per crear el tutorial, li mostrarem al client/a els següents 4 passos:
 
+![Home](./src/img/app-terminada.png)
+
 
 # 🌟 Nivell 1
 ## Exercici 1
