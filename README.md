@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Descripció
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Un/a client/a que té com a producte principal una web de gestió empresarial desenvolupada amb React, ens ha demanat que desenvolupem un tutorial, en el qual mitjançant dos botons els nous usuaris puguin avançar i retrocedir en els consells, modificant-se el text d'ajuda i la imatge de fons.
 
-## Available Scripts
+Com de moment no tenim el material necessari per crear el tutorial, li mostrarem al client/a els següents 4 passos:
 
-In the project directory, you can run:
 
-### `npm start`
+# 🌟 Nivell 1
+## Exercici 1
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Crearem un component que s'encarregarà de renderitzar una frase, i l’importarem i usarem en el component principal App.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Has de dur a terme els següents passos:
 
-### `npm test`
+1. Crear la carpeta components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Crear la carpeta escena dins de la carpeta components.
 
-### `npm run build`
+3. Dins de la carpeta escena implementarem el primer component. Per a això has de crear el fitxer Escena.js. Aquest primer component només ha de retornar el següent string:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Ja tenim el nostre primer component creat, però encara no es mostrarà la frase. Per a això farem servir el nostre flamant component Escena. En el return del component app has d'utilitzar el component Escena.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+El resultat ha de ser:
 
-### `npm run eject`
+## Exercici 2
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Llegirem les dades d'un arxiu JSON o JS, amb els textos de la història en el component App:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[
+  "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial",
+  "Sentia curiositat per l'interior de la nau i es va posar a inspeccionar-la. Va arribar a una sala amb dues portes.",
+  "L'heroi va decidir travessar la porta que el portava a casa",
+  "Mentrestant, altres herois no van tenir tanta sort en la seva elecció ..."
+]
+2. S'ha de passar per props cadascun dels textos de la història al component Escena. (El component escena renderitzarà una sola línia de text).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Modificarem el component Escena per a mostrar totes les línies de text obtingudes del component pare App mitjançant props.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+L’exercici hauria de quedar així:
 
-## Learn More
+## Exercici 3
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+És moment d'aplicar estils al nostre component Escena. Has de maquetar aquest component utilitzant styled-components:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Exercici 4
 
-### Code Splitting
+Mostrarem totes les línies de l’aplicació, però ressaltarem només una de cada vegada, que anirà canviant a mesura que premem els botons d’avançar o retrocedir:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 🌟🌟 Nivell 2
+## Exercici 5
 
-### Analyzing the Bundle Size
+Seria convenient mostrar a l'usuari/ària una pantalla inicial de benvinguda, que contingui la descripció del projecte i un botó de començar. En aquest exercici has d'usar el renderitzat condicional.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# 🌟🌟🌟 Nivell 3
+## Exercici 6
 
-### Making a Progressive Web App
+Ja només et falta modificar la imatge de fons segons l'usuari/ària vagi canviant de frase. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Modificar el fitxer JSON i convertir-lo en un fitxer JS amb un array d'objectes. Cada objecte tindrà dues propietats: txt i img:
 
-### Advanced Configuration
+- txt serà la propietat que emmagatzemarà el text de l'escena.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- img serà la propietat que emmagatzemarà la imatge de fons que es veurà a la pantalla.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Com en l'array ja tens la frase a mostrar juntament amb la seva imatge, et resultarà senzill dinamitzar l'atribut "src" de la imatge.
