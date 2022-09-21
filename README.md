@@ -26,6 +26,8 @@ Has de dur a terme els següents passos:
 
 El resultat ha de ser:
 
+![Text](./src/img/first-txt.png)
+
 ## Exercici 2
 
 1. Llegirem les dades d'un arxiu JSON o JS, amb els textos de la història en el component App:
@@ -42,13 +44,19 @@ El resultat ha de ser:
 
 L’exercici hauria de quedar així:
 
+![Text-2](./src/img/tercer-txt.png)
+
 ## Exercici 3
 
 És moment d'aplicar estils al nostre component Escena. Has de maquetar aquest component utilitzant styled-components:
 
+![Text-2](./src/img/second-txt.png)
+
 ## Exercici 4
 
 Mostrarem totes les línies de l’aplicació, però ressaltarem només una de cada vegada, que anirà canviant a mesura que premem els botons d’avançar o retrocedir:
+
+![Text-2](./src/img/quart-txt.png)
 
 # 🌟🌟 Nivell 2
 ## Exercici 5
@@ -67,3 +75,5 @@ Modificar el fitxer JSON i convertir-lo en un fitxer JS amb un array d'objectes.
 - img serà la propietat que emmagatzemarà la imatge de fons que es veurà a la pantalla.
 
 Com en l'array ja tens la frase a mostrar juntament amb la seva imatge, et resultarà senzill dinamitzar l'atribut "src" de la imatge.
+
+![Home](./src/img/app-terminada.png)
