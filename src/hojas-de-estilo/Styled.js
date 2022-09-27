@@ -1,26 +1,68 @@
-import React from "react";
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const Rectangulo = styled.div`
-    width: 100%;
-    height: 6.8rem;
-    margin: 1.4rem 1.4rem;
-    display: flex;
-    align-center: center;
-    justify-center: center;
-    background-color: white;
-    border: 0.2rem solid black;
-    border-radius: 4rem;
-`;
+const Title = styled.h1`
+    color: #DDDDDD;
+`
 
-export const Frame = styled.p`
-    font-size: 1rem;
+const Fons = styled.div`
+    background-color: #383838;
+`
+
+const ButtonBenvingut = styled.div`
+    background-color: #066163;
+    border-radius: 20px;
+    position: absolute;
+    padding: 1rem;
+    top: 50vh;
     text-align: center;
-    padding: 2rem;
-    font-family:sans-serif;
-    font-weight: 400;
-    line-height: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
+    font-size: 2rem;
+    &:hover {
+        color: white;
+        background-color: red;
+    }
+`
+
+const Background = styled.div`
+    background-image: url("${(props) => props.image}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+`
+const Paragraph = styled.p`
+    border: 2px solid black;
+    border-radius: 2rem;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 1.5rem;
+    background: ${props => props.active ? "pink" : "rgba(255, 255, 255, 0.7)"} 
+    `
+/* const BottonBenvingut = styled(Button)`
+    background-color: yellow;
+    border-radius: 2rem;
+    position: absolute;
+    top: 50vh;
+    &:hover {
+        color: white;
+        background-color: blue;
+    }
+`; */
+
+const ButtonsDiv = styled.div`
+    button {
+        width: 45%;
+        padding: 1rem;
+        margin-top: 3rem;
+        margin-right: 1rem;
+        cursor: pointer; 
+        text-align: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border-radius: 10px black solid;
+    }
+`
+
+export { Background, Paragraph, ButtonsDiv, Title, ButtonBenvingut, Fons };

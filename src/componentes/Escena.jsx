@@ -1,13 +1,25 @@
 import React from "react";
-import '../hojas-de-estilo/Styled.js';
-import { Rectangulo, Frame } from "../hojas-de-estilo/Styled.js";
+import frases from "./Frases";
+import { Paragraph } from "../hojas-de-estilo/Styled";
 
-function Escena(props) {
+// We always must put an unic key when we are iterating an array.
+
+function Escena(props){
+    
+    const paragraph = frases.map(frase => {
+        return(
+            <div key={frase.id}>
+            <Paragraph active={props.numEscena === frase.id}>{frase.txt}</Paragraph>
+            </div> 
+        ) 
+    })
+    
     return (
-        <Rectangulo>
-           <Frame>{props.texto}</Frame>
-        </Rectangulo>
-    )
+        <div> 
+        {paragraph}
+        </div>
+        )   
 }
+
 
 export default Escena;
