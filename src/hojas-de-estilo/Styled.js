@@ -14,11 +14,12 @@ const Fons = styled.div`
     padding: 0;
 }
     background-color: #383838;
+    height: 200vh;
 `
 
-const ButtonBenvingut = styled.div`
+const ButtonHome = styled.div`
     background-color: #066163;
-    border-radius: 20px;
+    border-radius: 2rem;
     position: absolute;
     padding: 1rem;
     top: 50vh;
@@ -28,7 +29,7 @@ const ButtonBenvingut = styled.div`
     align-items: center;
     &:hover {
         color: white;
-        background-color: red;
+        background-color: #D2001A;
     }
 `
 const Background = styled.div`
@@ -48,17 +49,7 @@ const Paragraph = styled.p`
     margin-top: 1.5rem;
     background: ${props => props.active ? "pink" : "rgba(255, 255, 255, 0.7)"} 
     `
-/* const BottonBenvingut = styled(Button)`
-    background-color: yellow;
-    border-radius: 2rem;
-    position: absolute;
-    top: 50vh;
-    &:hover {
-        color: white;
-        background-color: blue;
-    }
-`; */
-
+    
 const ButtonsDiv = styled.div`
     button {
         width: 45%;
@@ -74,4 +65,4 @@ const ButtonsDiv = styled.div`
     }
 `
 
-export { Background, Paragraph, ButtonsDiv, Title, ButtonBenvingut, Fons };
+export { Background, Paragraph, ButtonsDiv, Title, ButtonHome, Fons };

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Navbar from "./componentes/Navbar";
 import Escena from "./componentes/Escena";
-import { Background, ButtonsDiv, Title, ButtonBenvingut, Fons } from "./hojas-de-estilo/Styled";
+import { Background, ButtonsDiv, Title, ButtonHome, Fons } from "./hojas-de-estilo/Styled";
 import frases from "./componentes/Frases";
 import { GoRocket } from "react-icons/go";
 
@@ -19,10 +19,12 @@ function App() {
           <h1>Benvinguts i benvingudes</h1>
           <h3>Us explicarem una breu història de herois del espai sideral.</h3>
           <img src="https://robohash.org/Cherembo"/>
-          <ButtonBenvingut onClick={() => setIsShown(false)}>
+          <img  src="https://robohash.org/Miltika"/>
+          <img  src="https://robohash.org/Pomposi"/>
+          <ButtonHome onClick={() => setIsShown(false)}>
             <GoRocket />
               Començar ara
-          </ButtonBenvingut>
+          </ButtonHome>
           </Title>
           </Fons>
       </div>
