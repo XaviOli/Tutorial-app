@@ -2,9 +2,17 @@ import styled from 'styled-components'
 
 const Title = styled.h1`
     color: #DDDDDD;
+    font-size: 1.5rem;
+    text-align: center;
 `
 
 const Fons = styled.div`
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
     background-color: #383838;
 `
 
@@ -16,12 +24,13 @@ const ButtonBenvingut = styled.div`
     top: 50vh;
     text-align: center;
     font-size: 2rem;
+    display: flex;
+    align-items: center;
     &:hover {
         color: white;
         background-color: red;
     }
 `
-
 const Background = styled.div`
     background-image: url("${(props) => props.image}");
     background-size: cover;
