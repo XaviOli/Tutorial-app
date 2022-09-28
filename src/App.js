@@ -20,7 +20,7 @@ function App() {
           <h3>Us explicarem una breu història de herois del espai sideral.</h3>
           <img src="https://robohash.org/Cherembo"/>
           <img  src="https://robohash.org/Miltika"/>
-          <img  src="https://robohash.org/Pomposi"/>
+          <img  src="https://robohash.org/Pomposi"/> 
           <ButtonHome onClick={() => setIsShown(false)}>
             <GoRocket />
               Començar ara

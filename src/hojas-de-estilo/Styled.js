@@ -18,9 +18,13 @@ const Fons = styled.div`
 `
 
 const ButtonHome = styled.div`
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
     background-color: #066163;
     border-radius: 2rem;
-    position: absolute;
+    width: 40%;
+    justify-content: center;
     padding: 1rem;
     top: 50vh;
     text-align: center;
@@ -49,7 +53,7 @@ const Paragraph = styled.p`
     margin-top: 1.5rem;
     background: ${props => props.active ? "pink" : "rgba(255, 255, 255, 0.7)"} 
     `
-    
+
 const ButtonsDiv = styled.div`
     button {
         width: 45%;
