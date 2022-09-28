@@ -6,6 +6,8 @@ import { Background, ButtonsDiv, Title, ButtonHome, Fons } from "./hojas-de-esti
 import frases from "./componentes/Frases";
 import { GoRocket } from "react-icons/go";
 
+// React icons for include icons in our project.
+
 function App() {
 
   const [ count, setCount ] = useState(1);

@@ -2,7 +2,7 @@ import React from "react";
 import frases from "./Frases";
 import { Paragraph } from "../hojas-de-estilo/Styled";
 
-// We always must put an unic key when we are iterating an array.
+// Generally, the key should be a unique ID assigned to each item. We can use the array index as a key.
 
 function Escena(props){
     
